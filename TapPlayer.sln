@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TapPlayer", "TapPlayer\TapPlayer.vcxitems", "{31DF3C67-AAE6-454B-BE9A-FD658CB4BD6A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GusTap", "GusTap\GusTap.vcxproj", "{1671D559-7793-46AE-B94A-A59987D896A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GusTapOrganizer", "GusTapOrganizer\GusTapOrganizer.csproj", "{66557996-A531-4B38-803A-08CF84FF036F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D66BD301-2009-4882-BE16-F4C995575EEF}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		TapPlayer\TapPlayer.vcxitems*{1671d559-7793-46ae-b94a-a59987d896a3}*SharedItemsImports = 4
+		TapPlayer\TapPlayer.vcxitems*{31df3c67-aae6-454b-be9a-fd658cb4bd6a}*SharedItemsImports = 9
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1671D559-7793-46AE-B94A-A59987D896A3}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{1671D559-7793-46AE-B94A-A59987D896A3}.Debug|x86.ActiveCfg = Debug|Win32
+		{1671D559-7793-46AE-B94A-A59987D896A3}.Debug|x86.Build.0 = Debug|Win32
+		{1671D559-7793-46AE-B94A-A59987D896A3}.Release|Any CPU.ActiveCfg = Release|Win32
+		{1671D559-7793-46AE-B94A-A59987D896A3}.Release|x86.ActiveCfg = Release|Win32
+		{1671D559-7793-46AE-B94A-A59987D896A3}.Release|x86.Build.0 = Release|Win32
+		{66557996-A531-4B38-803A-08CF84FF036F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66557996-A531-4B38-803A-08CF84FF036F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66557996-A531-4B38-803A-08CF84FF036F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{66557996-A531-4B38-803A-08CF84FF036F}.Debug|x86.Build.0 = Debug|Any CPU
+		{66557996-A531-4B38-803A-08CF84FF036F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66557996-A531-4B38-803A-08CF84FF036F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66557996-A531-4B38-803A-08CF84FF036F}.Release|x86.ActiveCfg = Release|Any CPU
+		{66557996-A531-4B38-803A-08CF84FF036F}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B886D55-31DA-4466-933F-41D7DDB0BB0C}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,10 @@
+#pragma once
+
+#define PILOTFREQ					619
+#define SYNCFIRSTFREQ				191
+#define SYNCSECONDFREQ				210
+#define ZEROPULSEFREQ				244
+#define ONEPULSEFREQ				489
+
+#define PILOTHEADERCOUNT			8063
+#define PILOTDATACOUNT				3223

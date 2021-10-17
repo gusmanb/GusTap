@@ -1,0 +1,46 @@
+/*
+ Name:		TapPlayerTester.ino
+ Created:	03/10/2021 21:57:39
+ Author:	Gus
+*/
+
+#include "TapBrowser.h"
+#include "TapPlayer.h"
+
+uint8_t tapFile[] = { 0x13, 0x00, 0x00, 0x00, 0x74, 0x65, 0x73, 0x74, 0x68, 0x6F, 0x6C, 0x61, 0x20, 0x20, 0x1B, 0x00,
+0x0A, 0x00, 0x1B, 0x00, 0x16, 0x1D, 0x00, 0xFF, 0x00, 0x0A, 0x08, 0x00, 0xF5, 0x22, 0x68, 0x6F,
+0x6C, 0x61, 0x22, 0x0D, 0x00, 0x14, 0x0B, 0x00, 0x20, 0xEC, 0x31, 0x30, 0x0E, 0x00, 0x00, 0x0A,
+0x00, 0x00, 0x0D, 0xD4 };
+uint8_t bufferPos;
+// the setup function runs once when you press reset or power the board
+
+
+uint16_t lengthHandler()
+{
+	if (bufferPos > 50)
+		return 0;
+
+	uint16_t len = *((uint16_t*)(&tapFile[bufferPos]));
+
+	bufferPos += 2;
+	return len;
+}
+
+uint8_t dataHandler()
+{
+	return tapFile[bufferPos++];
+}
+
+void idleHandler() {}
+
+void setup() {
+	tapPlayer.Initialize(&lengthHandler, &dataHandler, &idleHandler, PIN3);
+}
+
+
+// the loop function runs over and over again until power down or reset
+void loop() 
+{
+	bufferPos = 0;
+	tapPlayer.Play();
+}

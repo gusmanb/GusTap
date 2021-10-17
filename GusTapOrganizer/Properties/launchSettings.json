@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "GusTapOrganizer": {
+      "commandName": "Project",
+      "commandLineArgs": "--root-folder \"H:\\\\\""
+    }
+  }
+}

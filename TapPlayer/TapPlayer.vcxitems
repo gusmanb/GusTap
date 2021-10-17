@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{31df3c67-aae6-454b-be9a-fd658cb4bd6a}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)StopWatch.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)TapBrowser.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)TapPlayer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)StopWatch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TapBrowser.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TapPlayerDefines.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TapPlayer.h" />
+  </ItemGroup>
+</Project>

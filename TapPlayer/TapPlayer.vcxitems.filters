@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)TapPlayer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)StopWatch.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)TapBrowser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)TapPlayer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TapPlayerDefines.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)StopWatch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TapBrowser.h" />
+  </ItemGroup>
+</Project>
